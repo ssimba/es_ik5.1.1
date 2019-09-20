@@ -1,6 +1,3 @@
-FROM elasticsearch:latest
-RUN sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-RUN apt-get update && apt-get install zip 
-RUN mkdir -p /usr/share/elasticsearch/plugins/ik 
-ADD elasticsearch-analysis-ik-5.1.1.zip /usr/share/elasticsearch/plugins/ik
-RUN cd /usr/share/elasticsearch/plugins/ik && unzip elasticsearch-analysis-ik-5.1.1.zip
+FROM docker.elastic.co/elasticsearch/elasticsearch:6.2.4
+ADD ik-6.2.4.zip /usr/share/
+RUN cd /usr/share/elasticsearch/plugins && unzip /usr/share/ik-6.2.4.zip

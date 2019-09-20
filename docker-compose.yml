@@ -2,10 +2,15 @@ version: '2'
 services:
   es:
     build: .
-    image: es_ik:latest
+    image: es624withikplugin:latest
     environment:
       - http.host=0.0.0.0
       - transport.host=127.0.0.1
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - cluster.name=docker-cluster
+      - bootstrap.memory_lock=true
     ports:
       - "9200:9200"
       - "9300:9300"
+    volumes:
+      - D:/Docker/es624/data:/usr/share/elasticsearch/data
