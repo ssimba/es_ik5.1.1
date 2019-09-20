@@ -16,6 +16,10 @@ docker-compose up
 ### 参考
 [elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
 
+[elasticsearch docker production mode](https://www.elastic.co/guide/en/elasticsearch/reference/6.2/docker.html#docker-cli-run-prod-mode)
+
+[elasticsearch path settings](https://www.elastic.co/guide/en/elasticsearch/reference/6.2/path-settings.html)
+
 [elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)
 
 ### 注意事项
