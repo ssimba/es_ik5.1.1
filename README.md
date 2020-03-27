@@ -23,3 +23,8 @@ docker-compose up
 
 ### 注意事项
 我自己测试了分词没有问题，如果你是做测试用可以试试，如果是生产环境使用建议还是找你认为最稳定的版本。
+
+### 新增分支 7.6.1 集成 elasticsearch 7.6.1 及 ik 7.6.1
+
+[ik 7.6.1](https://github.com/ssimba/es_ik5.1.1/tree/ik7.6.1)
+`docker-compose up -D`
