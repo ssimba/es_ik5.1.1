@@ -1,8 +1,8 @@
-version: '2'
+version: '3'
 services:
   es:
     build: .
-    image: es624withikplugin:latest
+    image: es761withikplugin:latest
     environment:
       - http.host=0.0.0.0
       - transport.host=127.0.0.1

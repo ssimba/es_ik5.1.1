@@ -29,3 +29,8 @@ docker-compose up
 
 [ik 6.2.4](https://github.com/ssimba/es_ik5.1.1/tree/ik6.2.4)
 `docker-compose up -D`
+
+### 新增分支 7.6.1 集成 elasticsearch 7.6.1 及 ik 7.6.1
+
+[ik 7.6.1](https://github.com/ssimba/es_ik5.1.1/tree/ik7.6.1)
+`docker-compose up -D`
